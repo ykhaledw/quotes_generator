@@ -1,16 +1,13 @@
 # quote_generator_app
 
-A new Flutter project.
+Crafted an engaging Quotes Generator app using Flutter, offering users a daily dose of inspiration. The app dynamically generates and displays thought-provoking quotes, fostering positivity and motivation. Leveraged Flutter's widget library to create an appealing and interactive user interface. Implemented features such as saving favorites for a personalized experience
 
-## Getting Started
+## Tools
 
-This project is a starting point for a Flutter application.
+firebase_core
+cloud_firestore
+firebase_storage
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+1. Quotes Screen
+2. Favourites Screen
