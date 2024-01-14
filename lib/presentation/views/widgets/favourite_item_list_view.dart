@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quote_generator_app/widgets/favourite_item.dart';
+import 'package:quote_generator_app/presentation/views/widgets/favourite_item.dart';
 
 class FavouriteItemListView extends StatelessWidget {
   const FavouriteItemListView({

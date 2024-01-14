@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quote_generator_app/constants.dart';
-import 'package:quote_generator_app/views/home_view.dart';
-import 'package:quote_generator_app/widgets/back_to_home_button.dart';
-import 'package:quote_generator_app/widgets/favourite_item_list_view.dart';
-import 'package:quote_generator_app/widgets/search_field.dart';
+import 'package:quote_generator_app/presentation/views/home_view.dart';
+import 'package:quote_generator_app/presentation/views/widgets/back_to_home_button.dart';
+import 'package:quote_generator_app/presentation/views/widgets/favourite_item_list_view.dart';
+import 'package:quote_generator_app/presentation/views/widgets/search_field.dart';
 
 class FavouritesView extends StatelessWidget {
   const FavouritesView({super.key});

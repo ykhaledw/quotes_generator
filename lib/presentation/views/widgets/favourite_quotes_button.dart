@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quote_generator_app/widgets/custom_button.dart';
+import 'package:quote_generator_app/presentation/views/widgets/custom_button.dart';
 
 class FavouriteQuotesButton extends StatelessWidget {
   const FavouriteQuotesButton({
