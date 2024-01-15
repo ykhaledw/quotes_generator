@@ -5,15 +5,17 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
     required this.text,
+    this.style,
   });
   final String text;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
     return IntrinsicHeight(
       child: Container(
         width: MediaQuery.of(context).size.width,
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(15),
         decoration: const BoxDecoration(
           color: kButtonColor,
           borderRadius: BorderRadius.only(
@@ -24,9 +26,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: const TextStyle(
-              fontSize: 32,
-            ),
+            style: style,
           ),
         ),
       ),

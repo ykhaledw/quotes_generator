@@ -10,48 +10,12 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            backgroundColor: kPrimaryColor,
-            body: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Spacer(
-                    flex: 14,
-                  ),
-                  FavouriteQuotesButton(
-                    onTap: () {
-                      Navigator.pushReplacement(context,
-                          MaterialPageRoute(builder: (context) {
-                        return const FavouritesView();
-                      }));
-                    },
-                  ),
-                  const Spacer(
-                    flex: 1,
-                  ),
-                  const QuotesView(),
-                  const Spacer(
-                    flex: 14,
-                  ),
-                ],
-              ),
-            ),
-          );
-  }
-}
-
-
-/*Scaffold(
       backgroundColor: kPrimaryColor,
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Spacer(
-              flex: 14,
-            ),
             FavouriteQuotesButton(
               onTap: () {
                 Navigator.pushReplacement(context,
@@ -60,14 +24,14 @@ class HomeView extends StatelessWidget {
                 }));
               },
             ),
-            const Spacer(
-              flex: 1,
+            const SizedBox(
+              height: 10,
             ),
             const QuotesView(),
-            const Spacer(
-              flex: 14,
-            ),
           ],
         ),
       ),
-    )*/
+    );
+  }
+}
+

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quote_generator_app/constants.dart';
+import 'package:quote_generator_app/core/utils/styles.dart';
 
 class FavouriteItem extends StatelessWidget {
   const FavouriteItem({
@@ -23,17 +24,14 @@ class FavouriteItem extends StatelessWidget {
                 padding: EdgeInsets.only(left: 10),
                 child: Text(
                   '“All I required to be happy was friendship and people I could admire.”',
-                  style: TextStyle(fontSize: 32),
+                  style: Styles.textStyle26,
                 ),
               ),
               const Padding(
                 padding: EdgeInsets.only(right: 15),
                 child: Text(
                   'Christian Dior',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Color(0xff6E6E6E),
-                  ),
+                  style: Styles.textStyle22,
                 ),
               ),
               const SizedBox(
@@ -58,10 +56,10 @@ class FavouriteItem extends StatelessWidget {
                     ),
                   ),
                   padding: const EdgeInsets.symmetric(vertical: 8),
-                  child: const Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(right: 4),
                         child: Icon(
                           Icons.favorite_border,
@@ -71,7 +69,7 @@ class FavouriteItem extends StatelessWidget {
                       ),
                       Text(
                         'Remove From Favourite',
-                        style: TextStyle(color: kPrimaryColor, fontSize: 26),
+                        style: Styles.textStyle22.copyWith(color: const Color(0xFF8249B5)),
                       ),
                     ],
                   ),

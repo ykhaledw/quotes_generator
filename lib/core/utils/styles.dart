@@ -12,4 +12,10 @@ abstract class Styles {
     fontSize: 22,
     fontFamily: 'Gemunu Libre',
   );
+
+  static const textStyle20 = TextStyle(
+    color: Color(0xFFFBFBFB),
+    fontSize: 20,
+    fontFamily: 'Gemunu Libre',
+  );
 }
