@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quote_generator_app/constants.dart';
-import 'package:quote_generator_app/presentation/data/cubits/quote_cubit/get_quote_cubit.dart';
-import 'package:quote_generator_app/presentation/data/cubits/quote_cubit/quote_state.dart';
 import 'package:quote_generator_app/presentation/views/favourites_view.dart';
 import 'package:quote_generator_app/presentation/views/widgets/favourite_quotes_button.dart';
 import 'package:quote_generator_app/presentation/views/widgets/quotes_view.dart';
@@ -12,14 +9,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<GetQuoteCubit, QuoteState>(
-      builder: (context, state) {
-        if (state is QuoteStateLoading) {
-          return const Center(
-            child: Text('Loading'),
-          );
-        } else if (state is QuoteStateLoaded) {
-          return Scaffold(
+    return Scaffold(
             backgroundColor: kPrimaryColor,
             body: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -40,7 +30,7 @@ class HomeView extends StatelessWidget {
                   const Spacer(
                     flex: 1,
                   ),
-                  QuotesView(quoteModel: state.quoteModel),
+                  const QuotesView(),
                   const Spacer(
                     flex: 14,
                   ),
@@ -48,13 +38,6 @@ class HomeView extends StatelessWidget {
               ),
             ),
           );
-        } else {
-          return const Center(
-            child: Text('There was an error'),
-          );
-        }
-      },
-    );
   }
 }
 

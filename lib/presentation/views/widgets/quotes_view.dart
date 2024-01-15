@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:quote_generator_app/constants.dart';
-import 'package:quote_generator_app/presentation/data/models/quote_model.dart';
 
 class QuotesView extends StatelessWidget {
   const QuotesView({
-    super.key, required this.quoteModel,
+    super.key,
   });
-
-  final QuoteModel quoteModel;
 
   @override
   Widget build(BuildContext context) {
@@ -24,21 +21,21 @@ class QuotesView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
+            const Padding(
+              padding:  EdgeInsets.only(left: 10),
               child: Text(
-                quoteModel.quote,
-                style: const TextStyle(fontSize: 32),
+                '',
+                style:  TextStyle(fontSize: 32),
               ),
             ),
             const SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 15),
+            const Padding(
+              padding:  EdgeInsets.only(right: 15),
               child: Text(
-                quoteModel.author,
-                style: const TextStyle(
+                '',
+                style:  TextStyle(
                   fontSize: 24,
                   color: Color(0xff6E6E6E),
                 ),
