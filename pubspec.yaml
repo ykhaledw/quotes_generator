@@ -85,6 +85,9 @@ flutter:
     - family: Changa
       fonts:
         - asset: assets/fonts/Changa-Regular.ttf
+    - family: Gemunu Libre
+      fonts:
+        - asset: assets/fonts/GemunuLibre-Regular.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

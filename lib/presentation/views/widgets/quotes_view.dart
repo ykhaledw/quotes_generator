@@ -24,7 +24,7 @@ class QuotesView extends StatelessWidget {
             const Padding(
               padding:  EdgeInsets.only(left: 10),
               child: Text(
-                '',
+                '“All I required to be happy was friendship and people I could admire.”',
                 style:  TextStyle(fontSize: 32),
               ),
             ),
@@ -34,7 +34,7 @@ class QuotesView extends StatelessWidget {
             const Padding(
               padding:  EdgeInsets.only(right: 15),
               child: Text(
-                '',
+                'Christian Dior',
                 style:  TextStyle(
                   fontSize: 24,
                   color: Color(0xff6E6E6E),
