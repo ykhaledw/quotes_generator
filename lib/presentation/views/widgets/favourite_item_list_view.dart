@@ -8,13 +8,12 @@ class FavouriteItemListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.builder(
-        padding: EdgeInsets.zero,
-        itemCount: 5,
-        itemBuilder: (context, index) {
-          return const FavouriteItem();
-        },
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(
+        (context, index) {
+        return const FavouriteItem();
+      },
+      childCount: 5,
       ),
     );
   }

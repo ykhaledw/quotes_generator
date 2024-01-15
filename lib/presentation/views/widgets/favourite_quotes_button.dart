@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:quote_generator_app/core/utils/styles.dart';
+import 'package:quote_generator_app/presentation/views/favourites_view.dart';
 import 'package:quote_generator_app/presentation/views/widgets/custom_button.dart';
 
 class FavouriteQuotesButton extends StatelessWidget {
   const FavouriteQuotesButton({
     super.key,
-    this.onTap,
   });
 
-  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: GestureDetector(
-        onTap: onTap,
+        onTap: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) {
+                return const FavouritesView();
+              }));
+            },
         child: Container(
           padding: const EdgeInsets.only(
             top: 17,
