@@ -63,14 +63,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Teko
-      fonts:
-        - asset: assets/fonts/Teko-Regular.ttf
+    
     #       - asset: fonts/Schyler-Italic.ttf
     #         style: italic
-    - family: Changa
-      fonts:
-        - asset: assets/fonts/Changa-Regular.ttf
     - family: Gemunu Libre
       fonts:
         - asset: assets/fonts/GemunuLibre-Regular.ttf
