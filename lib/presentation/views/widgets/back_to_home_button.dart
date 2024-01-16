@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quote_generator_app/constants.dart';
+import 'package:quote_generator_app/presentation/views/widgets/constants.dart';
 import 'package:quote_generator_app/core/utils/styles.dart';
 import 'package:quote_generator_app/presentation/views/home_view.dart';
 
