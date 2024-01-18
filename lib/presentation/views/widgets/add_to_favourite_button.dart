@@ -8,12 +8,10 @@ class AddToFavouriteButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding:
-          const EdgeInsets.symmetric(vertical: 8, horizontal: 34),
+      padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 34),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: const BorderRadius.only(
-            bottomRight: Radius.circular(6)),
+        borderRadius: const BorderRadius.only(bottomRight: Radius.circular(6)),
         border: Border.all(
           color: const Color(0xff8249B5),
           width: 2,

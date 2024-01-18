@@ -8,16 +8,15 @@ class BackToHomeButton extends StatelessWidget {
     super.key,
   });
 
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) {
-                  return const HomeView();
-                }));
-              },
+        Navigator.pushReplacement(context,
+            MaterialPageRoute(builder: (context) {
+          return const HomeView();
+        }));
+      },
       child: Container(
         width: MediaQuery.of(context).size.width,
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 60),

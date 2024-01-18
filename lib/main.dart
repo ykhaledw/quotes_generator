@@ -11,12 +11,11 @@ class QuoteGeneratorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-              debugShowCheckedModeBanner: false,
-              home: HomeView(),
-            );
+      debugShowCheckedModeBanner: false,
+      home: HomeView(),
+    );
   }
 }
-
 
 /*MaterialApp(
       debugShowCheckedModeBanner: false,

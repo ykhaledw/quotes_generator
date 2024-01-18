@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:quote_generator_app/core/utils/styles.dart';
 

@@ -11,9 +11,9 @@ class FavouriteItemListView extends StatelessWidget {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
-        return const FavouriteItem();
-      },
-      childCount: 5,
+          return const FavouriteItem();
+        },
+        childCount: 5,
       ),
     );
   }

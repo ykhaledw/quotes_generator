@@ -9,8 +9,7 @@ class GenerateAnotherQuoteButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(
-          vertical: 13, horizontal: 16),
+      padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 16),
       decoration: const BoxDecoration(
         color: Color(0xff8249B5),
         borderRadius: BorderRadius.only(

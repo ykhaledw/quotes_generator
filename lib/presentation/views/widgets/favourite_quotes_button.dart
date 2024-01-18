@@ -8,17 +8,16 @@ class FavouriteQuotesButton extends StatelessWidget {
     super.key,
   });
 
-
   @override
   Widget build(BuildContext context) {
     return Center(
       child: GestureDetector(
         onTap: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) {
-                return const FavouritesView();
-              }));
-            },
+          Navigator.pushReplacement(context,
+              MaterialPageRoute(builder: (context) {
+            return const FavouritesView();
+          }));
+        },
         child: Container(
           padding: const EdgeInsets.only(
             top: 17,
