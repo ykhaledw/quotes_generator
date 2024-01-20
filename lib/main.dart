@@ -16,11 +16,3 @@ class QuoteGeneratorApp extends StatelessWidget {
     );
   }
 }
-
-/*MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Teko',
-      ),
-      home: const HomeView(),
-    )*/
